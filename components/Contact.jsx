@@ -87,7 +87,7 @@ const Contact = ({ standalone = false }) => {
             id="contact"
             className={`py-20 ${standalone ? 'min-h-screen' : ''} bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

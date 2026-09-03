@@ -12,7 +12,7 @@ const experiences = [
     {
   company: 'Aptiw Technologies',
   role: 'Fullstack Developer',
-  period: 'On-site | Jan 2025 - Present',
+  period: 'Remote | 2025 - Present',
   description:
     'Building and maintaining modern software solutions for clients across diverse industries.',
   url: 'https://aptiw.com',
@@ -23,7 +23,8 @@ const experiences = [
     period: 'Remote | 2025',
     description:
       'Developed a responsive laundry and cleaning service website for Vitality Investment Limited using React, Node.js, and MongoDB.',
-    url: 'https://vitality.ng',
+    url: 'https://vivalyn-cleaning.vercel.app',
+    // url: 'https://vitality.ng',
   },
   {
     company: 'The Saints Online Memorial',
@@ -31,7 +32,7 @@ const experiences = [
     period: 'Remote | 2025',
     description:
       'Built a memorial website allowing users to honor lost loved ones with tributes, images, and messages of remembrance.',
-    url: 'https://thesaints.online',
+    url: 'https://thesaintsonline.com',
   },
   {
     company: 'Volunteer Medical Laboratory Scientists (VMLS)',
@@ -66,7 +67,7 @@ export default function Experience() {
             id="experience"
             className="py-20 bg-gray-50 dark:bg-gradient-to-r from-gray-900 to-gray-950 text-gray-800 dark:text-gray-100 transition-colors duration-300"
         >
-            <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

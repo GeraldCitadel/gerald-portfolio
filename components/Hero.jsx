@@ -32,11 +32,11 @@ const socialLinks = [
 
 export default function Hero() {
   return (
-    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-between px-6 md:px-20 py-16 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300" id='home'>
+    <section className="min-h-[60vh] md:min-h-screen flex items-center justify-between px-6 md:px-20 py-16 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300" id='home'>
       {/* Left Section */}
       <div className="flex-1 space-y-4">
-        <h1 className="text-xl font-semibold text-white bg-primary rounded-full py-0 px-2 w-40">Gerald Citadel</h1>
-        <h2 className="text-4xl md:text-5xl font-bold">HEY! I'M GERALD</h2>
+        {/* <h1 className="text-xl font-semibold text-white bg-primary rounded-full py-0 px-2 w-40">Gerald Citadel</h1> */}
+        <h1 className="text-4xl md:text-5xl font-bold">HEY! I'M GERALD</h1>
         <div className="text-2xl md:text-3xl font-semibold text-secondary">
           <TypeAnimation
             sequence={[
