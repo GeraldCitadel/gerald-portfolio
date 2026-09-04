@@ -2,16 +2,16 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Map each logo with custom width constraints (in pixels)
+
 const logos = [
-  { src: '/vitality.png', name: 'Vitality', width: 120 },
+  { src: '/vitality.png', name: 'Vitality', width: 120, className: 'invert dark:invert-0' },
   { src: '/saints.png', name: 'Saints', width: 50 },
   { src: '/erezmal.png', name: 'Erezmal', width: 150 },
   { src: '/vmls.png', name: 'VMLS', width: 35 },
   { src: '/faith.png', name: 'Faith', width: 100 },
   { src: '/investora.png', name: 'Investora', width: 130 },
   { src: '/physio.png', name: 'Physio', width: 120 },
-  { src: '/imprompto.png', name: 'Imprompto', width: 120 },
+  { src: '/imprompto.png', name: 'Imprompto', width: 120, className: 'dark:invert' },
 ]
 
 export default function ClientLogos() {
@@ -41,7 +41,7 @@ export default function ClientLogos() {
                 alt={`${logo.name} logo`}
                 fill
                 sizes="(max-width: 768px) 100px, 150px"
-                className="object-contain"
+                className={`object-contain ${logo.className || ''}`}
               />
             </div>
           ))}

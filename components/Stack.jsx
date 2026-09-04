@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Stack = () => {
 
  const technologies = [
-    'React', 'TypeScript', 'JavaScript', 'Next.js', 'Node.js', 'MySQL', 'PostgreSQL',
+    'React', 'TypeScript', 'JavaScript', 'Next.js', 'React Router', 'Node.js', 'MySQL', 'PostgreSQL', 'Prisma',
     'MongoDB', 'Cloudinary', 'Git', 'GitHub', 'VS Code', 'Figma', 'Tailwind CSS', 'Bootstrap', 'Framer Motion',
   ];
 

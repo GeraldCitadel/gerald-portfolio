@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +47,11 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/70 dark:bg-gray-900/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-        <div className="text-lg font-bold text-primary">Gerald Citadel</div>
+        {/* <div className="text-lg font-bold text-primary">Gerald Citadel</div> */}
+        <Link href='/' className="flex items-center gap-2">
+          <img src="/logo.png" alt="logo" className="h-12 w-auto invert dark:invert-0" />
+          <div className="text-lg font-bold text-primary hidden md:block">Gerald Citadel</div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
