@@ -11,7 +11,7 @@ import Experience from "./Experience";
 import Stack from "./Stack";
 import Contact from "./Contact";
 import ClientLogos from "./ClientLogos";
-import HomeLoader from "./HomeLoader";
+
 
 const Homepage = () => {
     useEffect(() => {
@@ -23,7 +23,6 @@ const Homepage = () => {
 
     return (
         <main className="overflow-x-hidden">
-            <HomeLoader />
             <Navbar />
             <Hero />
             <About />
