@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 
 
 const Projects = ({ standalone = false }) => {
@@ -178,11 +179,13 @@ const Projects = ({ standalone = false }) => {
                                 whileHover={{ y: -5 }}
                                 className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
                             >
-                                <div className="relative overflow-hidden">
-                                    <img
+                                <div className="relative h-48 overflow-hidden">
+                                    <Image
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                                        fill                                     
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                                        className="object-cover transition-transform duration-300 hover:scale-110"
                                     />
                                     <div
                                         className={`absolute top-4 left-4 w-12 h-12 bg-gradient-to-r ${project.gradient} rounded-full flex items-center justify-center`}

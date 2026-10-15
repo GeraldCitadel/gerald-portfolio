@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,9 +48,15 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/70 dark:bg-gray-900/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-        {/* <div className="text-lg font-bold text-primary">Gerald Citadel</div> */}
         <Link href='/' className="flex items-center gap-2">
-          <img src="/logo.png" alt="logo" className="h-12 w-auto invert dark:invert-0" />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={48}
+            height={48}
+            priority
+            className="h-12 w-auto invert dark:invert-0"
+          />
           <div className="text-lg font-bold text-primary hidden md:block">Gerald Citadel</div>
         </Link>
 
@@ -96,17 +103,15 @@ export default function Navbar() {
 
       {/* Backdrop Overlay */}
       <div
-        className={`fixed inset-0 h-screen bg-black/70 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
-          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`fixed inset-0 h-screen bg-black/70 backdrop-blur-sm transition-opacity duration-300 md:hidden ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
         onClick={() => setIsMenuOpen(false)}
       />
 
       {/* Mobile Sidebar (Slides in from the right) */}
       <aside
-        className={`fixed top-0 right-0 h-screen w-72 bg-white dark:bg-gray-900 shadow-2xl z-50 p-6 flex flex-col justify-between transform transition-transform duration-300 ease-in-out md:hidden ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 h-screen w-72 bg-white dark:bg-gray-900 shadow-2xl z-50 p-6 flex flex-col justify-between transform transition-transform duration-300 ease-in-out md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div>
           {/* Header inside Sidebar */}

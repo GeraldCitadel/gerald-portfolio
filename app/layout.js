@@ -7,11 +7,13 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 
@@ -40,7 +42,7 @@ export default function RootLayout({ children }) {
         {children}
       </body>
       {/* Google Analytics GA4 */}
-      <GoogleAnalytics gaId="G-KFMHM3BQKC" /> 
+      <GoogleAnalytics gaId="G-KFMHM3BQKC" />
     </html>
   );
 }
